@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" th:fragment="footer">
+<head>
+    <meta charset="UTF-8">
+    <title>footer</title>
+    <!--/* CSS */-->
+    <style>
+        .footer-body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+        footer {
+            margin-top: 150px; /* footer의 컨테이너 위에 150px의 여백 추가 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-top: 1px solid #e7e7e7;
+            font-size: 0.75em;
+        }
+        .footer-left, .footer-right {
+            text-align: left;
+            width: 40%;
+            color: #6c757d; /* 여기서 .footer-left와 .footer-right의 색상을 지정합니다 */
+        }
+        .footer-center {
+            width: 20%; /* 세 분할 중 가운데 */
+            text-align: center; /* 로고 중앙 정렬 */
+        }
+        .footer-links {
+            padding: 0; /* 기본 padding 제거 */
+        }
+        .footer-links li {
+            display: inline; /* 리스트 항목들을 인라인으로 표시 */
+            margin-right: 10px; /* 오른쪽 마진 추가 */
+        }
+        .footer-links a {
+            text-decoration: none; /* 링크 밑줄 제거 */
+            color: inherit; /* 부모 요소의 텍스트 색상 상속 */
+        }
+    </style>
+</head>
+<body class="footer-body">
+<footer class="container">
+    <div class="footer-left text-muted">
+        <!-- 왼쪽 섹션 내용 -->
+        <ul class="footer-links">
+            <li><a href="#"><b>회사소개</b></a></li>
+            <li><a href="#"><b>이용안내</b></a></li>
+            <li><a href="#"><b>이용약관</b></a></li>
+            <li><a href="#"><b>개인정보처리방침</b></a></li>
+        </ul>
+
+        상호:Pipi | 대표:심소소 | 통신판매업:2024-용인수지-01234<br>
+        사업자등록번호: 123-45-12345 [사업자정보확인]<br>
+        이메일: abcd1234@naver.com | 대표전화: 070-1234-5678<br>
+        주소: 부산 부산진구 중앙대로 688 한준빌딩 5층 | 호스팅 제공자: (주)Pipi<br>
+        개인정보보호책임자: 심소소<br>
+        고객님은 안전거래를 위해 현금으로 결제 시 저희 쇼핑몰에 가입한 구매안전서비스를<br>
+        이용하실 수 있습니다.[서비스 가입사실확인]<br>
+        <br>
+        (c) 피피컴퍼니. all rights reserved. designed & managed by WISA.
+    </div>
+    <a href="/" class="footer-center d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <span class="fs-4" style="color: #BE1E2D">Pipi</span>
+    </a>
+    <div class="footer-right">
+        <p>
+            <b>[반품주소]</b><br>
+            -롯데택배 이용 : 경기도 용인시 수지구 신봉동 911 롯데택배 용인성복대리점 피피앞<br>
+            -타 택배 이용 : 부산 부산진구 중앙대로 688 한준빌딩 5층 501호 (우)47296
+        </p>
+
+        <p>
+            <b>[상담전화]</b><br>
+            Open 월~금 11:00~16:00 / Lunch 13:00~14:00 / 공휴일off<br>
+            070-1234-5678 상담전화걸기
+        </p>
+        <p>
+            <b>[입금계좌]</b><br>
+            국민은행 : 111111-01-111111 심소소
+        </p>
+    </div>
+</footer>
+</body>
+</html>
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" th:fragment="footer">-->
+<!--<head>-->
+<!--	<meta charset="UTF-8">-->
+<!--	<title>footer</title>-->
+<!--	&lt;!&ndash;/* CSS */&ndash;&gt;-->
+<!--   	<style>-->
+<!--   		.footer-body {-->
+<!--   			display: flex!important;-->
+<!--   			height: auto!important;-->
+<!--   			min-height: 100vh!important;-->
+<!--   			flex-direction: column!important;-->
+<!--   		}-->
+<!--   	</style>-->
+<!--</head>-->
+<!--<body class="footer-body">-->
+<!--	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto container">-->
+<!--	    <p class="col-md-4 mb-0 text-muted"></p>-->
+
+
+<!--        <div class="footer-left col-md-4 mb-0 text-muted">-->
+<!--            &lt;!&ndash; 왼쪽 섹션 추가 내용 &ndash;&gt;-->
+<!--            상호:포콩컴퍼니 | 대표:윤석민 | 통신판매업:2014-용인수지-00391<br>-->
+<!--            사업자등록번호: 214-10-19709 [사업자정보확인]<br>-->
+<!--            이메일: donuts78@naver.com | 대표전화: 070-4119-1978<br>-->
+<!--            주소: 경기도 용인시 수지구 신봉2로 72 209-301 | 호스팅 제공자: (주)위사<br>-->
+<!--            개인정보보호책임자: 윤석민<br>-->
+<!--            고객님은 안전거래를 위해 현금으로 결제 시 저희 쇼핑몰에 가입한 구매안전서비스를 이용하실 수 있습니다.[서비스 가입사실확인]<br>-->
+<!--            <br>-->
+<!--            (c) 포콩컴퍼니. all rights reserved. designed & managed by WISA.-->
+<!--        </div>-->
+<!--        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">-->
+<!--            <span class="fs-4">PiPi</span>-->
+<!--        </a>-->
+<!--        <div class="footer-right col-md-4 justify-content-end">-->
+<!--            <ul class="footer-links">-->
+<!--                &lt;!&ndash; 오른쪽 섹션 링크 추가 &ndash;&gt;-->
+<!--                <li><a href="#">Home</a></li>-->
+<!--                <li><a href="#">Features</a></li>-->
+<!--                <li><a href="#">Pricing</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--		&lt;!&ndash;-->
+<!--	    <ul class="nav col-md-4 justify-content-end">-->
+<!--	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>-->
+<!--	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>-->
+<!--	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>-->
+<!--	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>-->
+<!--	      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>-->
+<!--		</ul>-->
+<!--		&ndash;&gt;-->
+<!--	</footer>-->
+<!--</body>-->
+<!--</html>-->
